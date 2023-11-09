@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+<head>
+    <title>CompressMe.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;  
+        margin: 0 !important;
+   
+         }
+        .containerr {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .cfont{
+            font-family: 'Poppins', sans-serif;
+        }
+        .input-file {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .btn-compress {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .btn-compress:hover {
+            background-color: #0056b3;
+        }
+        .icon-square {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 0.75rem;
+        background-color: #0dcaf0;
+        }
+        .features{
+            text-align: center;
+            
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+     <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <h1 class="cfont px-5"><i>CompressMe.com</i></h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Add "Sign In" and "Sign Up" links here -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">Sign Up</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a href="#help" class="nav-link px-4 text-body-secondary fs-5"><i>Help</i></a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="cfont">
+        <div class="bg-dark text-secondary px-4 pt-5">
+            <div class="py-5">
+              <h1 class="display-5 fw-bold text-white text-center ">File Compressor</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="fs-5 mb-5 text-center">A distinct and flawless file compressor that efficiently compresses files such as pdfs, documents, and txts.</p>
+                <div class="containerr mt-4">
+                    <form action="FileCompressionServlet" method="post" enctype="multipart/form-data">
+                        <input type="file" name="fileToCompress" class="input-file" accept=".zip, .rar">
+                        <button type="submit" class="btn btn-compress btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Compress</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="cfont">
+        <div class="container px-4 " id="featured-3">
+            <h2 class="pb-2 border-bottom features">Compress various files</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="feature col">
+                <div class="feature-icon icon-square d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg"  height="30" fill="dark" class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                        <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+                      </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Compress PDFs</h3>
+                <p>The safest way to compress PDFs online.</p>
+                
+              </div>
+              <div class="feature col">
+                <div class="feature-icon icon-square d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="dark" class="bi bi-file-earmark-word" viewBox="0 0 16 16">
+                        <path d="M5.485 6.879a.5.5 0 1 0-.97.242l1.5 6a.5.5 0 0 0 .967.01L8 9.402l1.018 3.73a.5.5 0 0 0 .967-.01l1.5-6a.5.5 0 0 0-.97-.242l-1.036 4.144-.997-3.655a.5.5 0 0 0-.964 0l-.997 3.655L5.485 6.88z"/>
+                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                      </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Compress DOCs</h3>
+                <p>Reliably reduce DOC files.</p>
+               
+              </div>
+              <div class="feature col">
+                <div class="feature-icon icon-square d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="dark" class="bi bi-filetype-txt" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-2v-1h2a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.928 15.849v-3.337h1.136v-.662H0v.662h1.134v3.337h.794Zm4.689-3.999h-.894L4.9 13.289h-.035l-.832-1.439h-.932l1.228 1.983-1.24 2.016h.862l.853-1.415h.035l.85 1.415h.907l-1.253-1.992 1.274-2.007Zm1.93.662v3.337h-.794v-3.337H6.619v-.662h3.064v.662H8.546Z"/>
+                      </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Compress TXTs</h3>
+                <p>Unique and faultless TXT compression.</p>
+                
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="help">
+      
+      <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+        
+        <div class="list-group">
+          <h2 class="pb-2 features">How to compress a file?</h2>
+          <div class="list-group-item d-flex gap-3 py-3" aria-current="true">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-check2-circle"
+              viewBox="0 0 16 16">
+<path
+                d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+<path
+                d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+</svg>
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">Click the choose file button to upload your document.</h6>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="list-group-item d-flex gap-3 py-3" aria-current="true">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-check2-circle"
+              viewBox="0 0 16 16">
+<path
+                d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+<path
+                d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+</svg>
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">Click on the compress button.</h6>
+                
+              </div>
+             
+            </div>
+          </div>
+          <div class="list-group-item d-flex gap-3 py-3" aria-current="true">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-check2-circle"
+              viewBox="0 0 16 16">
+<path
+                d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+<path
+                d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+</svg>
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">New compressed file gets automatically downloaded into the system.</h6>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cfont">
+      <div class="bg-dark text-secondary  pt-5">
+          <div class="py-5 border-top">
+            <h1 class="display-5 fw-bold text-white text-center ">About this website</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="fs-5 mb-2 text-center py-3">Experience the convenience of our intuitive file compression website, where you can effortlessly shrink your documents, without compromising content. Whether you need to save space on your device or speed up uploads and downloads, our platform offers a seamless solution. Compress files quickly and securely, and enjoy the benefits of faster transfers and more efficient storage management.</p>
+            </div>
+          </div>
+        </div>
+  </section>
+    <section>
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-4 text-body-secondary">Abhijay Sekhar Choudhury</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-4 text-body-secondary">Rakesh Mehta</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© VIT-AP University, All Rights Reserved</p>
+          </footer>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
