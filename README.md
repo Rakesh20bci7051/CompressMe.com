@@ -6,8 +6,9 @@ Developed a robust file compression website that offers the ability to compress 
 
 **How to run the file:**
 
-1.Clone the Repository:https://github.com/Rakesh20bci7051/CompressMe.com.git
-2. change the username and password of database accordingly in context.xml file
+**1.Clone the Repository:https://github.com/Rakesh20bci7051/CompressMe.com.git**
+
+**2. change the username and password of database accordingly in context.xml file**
 
 
 <Context>
@@ -19,7 +20,15 @@ driverClassName="com.mysql.cj.jdbc.Driver"
 url="jdbc:mysql://127.0.0.1:3306/compression?useSSL=false"/>
 </Context>
 
-3.add the all the required library accordingly
+**3.add the all the required library accordingly**
+![image](https://github.com/Rakesh20bci7051/CompressMe.com/assets/120373597/4796785c-862c-4c31-86e3-20cf70b1392d)
+
+4.Run your Application index.html file on server
+
+**5.Congrats your Application is Running SuccessFully**
+![image](https://github.com/Rakesh20bci7051/CompressMe.com/assets/120373597/34f706e4-415c-4dbd-81e2-02b28fa906f2)
+
+
 
 
 
